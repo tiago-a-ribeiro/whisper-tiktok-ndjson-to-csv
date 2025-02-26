@@ -33,7 +33,7 @@ for json_filename in os.listdir(json_folder):
                     tiktok_text = full_obj.split('", "segments"')[0]
                     if tiktok_text[0] == " ":
                         tiktok_text = tiktok_text[1:]
-                    audio_id = full_obj.split('{"audio_id": "video-downloader-tiktok-697cd5e77162569e501afeebf032bfb3')[1][:19]
+                    audio_id = full_obj.split('{"audio_id": "video-downloader-tiktok-')[1][32:32+19]
                     
                     writer.writerow([audio_id, f"https://www.tiktok.com/@x/video/{audio_id}", tiktok_text])
         count += 1
