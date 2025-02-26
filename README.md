@@ -1,6 +1,6 @@
 # whisper-tiktok-ndjson-to-csv
 
-"This script is designed to convert NDJSON files of TikTok audio datasets, which have been analyzed using Whisper and downloaded from 4Cat, into CSV files.
+This script is designed to convert NDJSON files of TikTok audio datasets, which have been analyzed using Whisper and downloaded from 4Cat, into CSV files.
 
 ## Instructions
 
