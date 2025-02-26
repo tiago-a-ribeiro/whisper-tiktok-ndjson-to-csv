@@ -39,4 +39,4 @@ for json_filename in os.listdir(json_folder):
         count += 1
 
 import ctypes  # An included library with Python install.   
-ctypes.windll.user32.MessageBoxW(0, f"{count} file{"s have" if count > 1 else " has"} been converted from NDJson to CSV.", "Tiktok Jsons to CSVs", 1)
+ctypes.windll.user32.MessageBoxW(0, f"{count} file{"s have" if count == 1 else " has"} been converted from NDJson to CSV.", "Tiktok Jsons to CSVs", 1)
